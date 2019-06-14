@@ -1,0 +1,64 @@
+body{
+	font-family: 'rubik' , arial, sans-serif;
+	color: #262533;
+}
+
+.medium{	
+	font-weight: 500;
+}
+
+.text-grey1{ color:#8C8CA6 }
+.text-grey2{ color:#D6D9E0 }
+
+
+.loca-label{
+	color: #8C8CA6;
+	font-size: 0.75rem;
+	top:-0.55rem;
+	margin-left: 0.65rem;
+	position: absolute;
+	background-color: #fff;
+	padding: 0 0.2rem;
+}
+
+.form-group{
+	position: relative;
+}
+
+.form-control{
+	height: calc(1.5em + .75rem + 12px)!important;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+.btn-primary{
+	background-color: #2862FE!important;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+
+.btn-ghost{
+	background-color: transparent!important;
+	color:#2862FE;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+.loca-main-nav .nav-link{
+	font-size: 1.25rem;
+	color: #8C8CA6;
+}
