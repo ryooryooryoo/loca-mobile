@@ -30,6 +30,10 @@ body{
 }
 
 
+b{
+	font-weight: 500;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus,
@@ -66,4 +70,257 @@ select:-webkit-autofill:focus {
 
 	height: calc(100vh - 93px);	
 	
+}
+
+
+/* begin photo pfoile ====================================================== */
+
+.photo-profile{
+	width: 100px;
+	height: 100px;
+}
+
+.photo-profile-marker{
+	width: 56px;
+	height: 56px;
+
+}
+
+.loca-marker{
+	width: 92px;
+	height: 110px;
+	padding-top: 14px;	
+	background: url(../img/pin-marker2x.png)no-repeat 100%;
+	position: relative;
+	z-index: 10
+}
+
+/* end photo pfoile ====================================================== */
+
+
+
+/* begin navbar ============================================================= */
+
+.loca-navbar{
+	height: 56px;
+}
+
+a.button-icon{
+	color: #262533;
+}
+
+.loca-bottom-navbar .nav-item {
+		height: 56px;
+		display: flex;
+	align-items: center;
+	justify-content: center;
+	width:calc(25% - 18px);
+	position: relative;
+	z-index: 1
+}
+
+.loca-bottom-navbar .nav-item.top-shadow:before{
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 56px;
+	background-color: white;
+	left: -10px;
+} 
+
+.loca-bottom-navbar .nav-item .nav-link{
+
+	
+	vertical-align: middle;
+	margin:0px!important;
+	padding:0px!important;
+	color: #D7D5E0;
+
+	
+}
+
+
+
+
+.button-main-center{
+	position: relative;
+	width:72px!important;
+	
+	background: url(../img/union.png)no-repeat top;
+	z-index: 10!important;
+
+}
+
+.button-main-center a{
+	position: absolute;
+	background-color: #2962FF;
+	color: #fff;
+	width: 56px;
+	height: 56px;
+	padding: 0px;
+	border-radius: 50%;
+	left:50%;
+	top:-30px;
+	margin-left: -28px;
+}
+
+.btn-float{
+	background-color: red;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	padding: 0px 8px;
+	position: relative;
+
+}
+
+.btn-float.has-notif:after{
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #E91E63;
+	right: 0;
+	top:0;
+}
+
+/* end navbar =============================================================== */
+
+
+/* tabs */
+
+
+.loca-tabs.nav-tabs .nav-link{
+	position: relative;
+	padding-left: 0px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #8C8CA6;
+	font-size: 0.875rem;
+	background-color: transparent;
+	border-color:#F5F6FA;
+}
+
+.loca-tabs.nav-tabs .nav-link.active{
+	border-color:#F5F6FA;
+	color: #2962FF;
+}
+
+.loca-tabs.nav-tabs .nav-link.active:after{
+	content: '';
+	position: absolute;
+	width: 35%;
+	height: 4px;
+	border-radius: 2px;
+	background-color: #2962FF;
+	left: 0;
+	bottom: 0;
+}
+/* tabs */
+
+
+
+
+
+#main .container{
+	padding:56px 15px 0;
+}
+
+.blue-text{
+	color: #2962FF!important;
+}
+
+a.reset-link{
+	color: inherit;
+}
+
+.text-dark{
+	color: #262533;
+}
+
+#map{
+	width: 100%;
+	height: 100vh;
+}
+
+.bg-cover{
+	background-size: cover;
+}
+
+.loca-bg-grey{
+	background-color: #F5F6FA!important;
+}
+
+.loca-divider{
+	height: 8px;
+	background-color: #F5F6FA;
+}
+
+.washout{
+	opacity: 0.5;
+}
+
+.btn-invited{
+	border: 1px solid #262533;
+	border-radius: 25px;
+	text-transform: lowercase;
+	padding: 6px 16px!important;
+}
+
+/* begin list */
+
+
+.loca-list-member li.list-group-item,
+.loca-list-notif li.list-group-item,
+.loca-list-myplace li.list-group-item{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.loca-list-notif a,
+.loca-list-setting a{
+	color: inherit;
+}
+
+li.list-group-item a.nav-item{
+	display: flex;
+	align-items: center;
+	color: inherit;
+}
+
+
+.photo-profile-medium{
+	width: 56px;
+	height: 56px;
+}
+
+.photo-profile-small{
+	width: 40px;
+	height: 40px;
+}
+
+.loca-list-notif span{
+	display: block;
+	margin-left: 72px;
+}
+
+.loca-list-notif .photo-profile-medium{
+	float:left;
+	margin-top: 4px;
+}
+
+/* end list */
+
+.icon-my-place{
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: #F5F6FA;
+	border: 1px solid	#D6D9E0;
+	color: #448AFF;
 }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Loca</title>
+    <!-- Material Design Icons -->
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!-- Rubik Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap" rel="stylesheet">
+  </head>
+  
+  <body class="d-flex flex-column h-100 grey lighten-2">
+    <header>  <!-- Fixed navbar -->
+    
+    <nav class="navbar navbar-expand-md loca-navbar navbar-dark fixed-top z-depth-0">
+      <div class="container">
+       
+     
+        <a class="btn-sm white btn-float has-notif text-dark z-depth-1 ml-auto" href="notification.html"><span class="mdi mdi-bell mdi-24px"></span></a>
+      </div>
+    </nav>
+    
+    </header>  <!-- End Fixed navbar -->
+    <!-- Begin page content -->
+    <main role="main" id="home">
+      <div id="map" style="background: url(img/map.png)100%; background-size: cover; position: fixed; z-index: 0" ></div><!-- style for sample only -->
+      
+      <a href="profile-detail.html">
+        <div class="loca-marker" style="margin-top:250px;margin-left: 100px;"><!-- style for sample only -->
+          <div class="photo-profile-marker d-block mx-auto border rounded-circle bg-cover" style="background-image: url(img/photo-profile/face1.png);">
+          </div>
+        </div>
+      </a>
+
+      <div class="loca-marker" style="margin-top:20px;margin-left: 50%;"><!-- style for sample only -->
+        <div class="photo-profile-marker d-block mx-auto border rounded-circle bg-cover " style="background-image: url(img/photo-profile/face2.png);">
+        </div>
+      </div>
+
+      </main>
+
+
+        <footer class="footer fixed-bottom">
+          <div class="container p-0">
+             <nav class="navbar navbar-expand-md loca-bottom-navbar navbar-dark p-0 transparent z-depth-0">
+                <div class="container">
+                  <ul class="nav w-100 ">
+                    <li class="nav-item white z-depth-1">
+                      <a class="nav-link" href="home.html"><span class="mdi mdi-home mdi-24px"></span></a>
+                    </li>
+                    <li class="nav-item top-shadow white z-depth-1" style="border-radius: 0 8px 0 0">
+                       <a class="nav-link" href="my-member.html"><span class="mdi mdi-account-group mdi-24px"></span></a>
+                    </li>
+                    <li class="nav-item button-main-center ">
+                   
+                      <a href="new-member.html" class="btn" onClick="window.open(login.html);">
+                        <span class="mdi mdi-plus mdi-36px text-white"></span>
+                      </a>
+                    </li>
+                    <li class="nav-item white  z-depth-1"  style="border-radius: 8px 0 0 0">
+                        <a class="nav-link" href="my-place.html"><span class="mdi mdi-map-marker-radius mdi-24px"></span></a>
+                    </li>
+                    <li class="nav-item top-shadow white  z-depth-1">
+                      <a class="nav-link" href="setting.html"><span class="mdi mdi-settings mdi-24px"></span></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+          </div>
+        </footer>
+
+
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+        }, false);
+        });
+        }, false);
+        })();
+        </script>
+      </body>
+    </html>        

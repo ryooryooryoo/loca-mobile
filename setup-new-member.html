@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Material Design Icons -->
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!-- Rubik Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap" rel="stylesheet">
+  </head>
+  
+  <body class="d-flex flex-column h-100 ">
+    <header>  <!-- Fixed navbar -->
+    
+    <nav class="navbar navbar-expand-md loca-navbar navbar-dark fixed-top white z-depth-0">
+      <div class="container">
+        <a class="button-icon left-button" href="#">
+          <span class="mdi mdi-arrow-left mdi-24px"></span>
+        </a>
+        <img src="img/logo-only.png" alt="" class="mx-auto">
+        <a class="button-icon left-button" href="#">
+          <span class="mdi mdi-arrow-left mdi-24px text-white"></span><!-- hack centered logo -->
+        </a>
+      </div>
+    </nav>
+    
+    </header>  <!-- End Fixed navbar -->
+    <!-- Begin page content -->
+    <main role="main" id="main">
+      <div class="container">
+        <div class="row d-flex align-items-center loca-login-wrapper pt-4 pt-md-0">
+          <div class="col-12">
+            
+            <h3 class="medium mb-5 text-center mt-4">Lets add new member to begin tracking </h3>
+            <a href="#" class="reset-link">
+              <div class="card z-depth-0 border  mb-3">
+                <div class="card-body d-flex align-items-center p-3">
+                  <img src="img/icons/new-app.png" width="40px" height="40px"  />
+                  
+                  <span class="ml-3">Invite by app link</span>
+                  <span class="mdi mdi-chevron-right mdi-24px ml-auto grey-text"></span>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="reset-link">
+              <div class="card z-depth-0 border  mb-3">
+                <div class="card-body d-flex align-items-center p-3">
+                  <img src="img/icons/new-sim.png" width="40px" height="40px"  />
+                  
+                  <span class="ml-3">Add SIM card Number</span>
+                  <span class="mdi mdi-chevron-right mdi-24px ml-auto grey-text"></span>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="reset-link">
+              <div class="card z-depth-0 border">
+                <div class="card-body d-flex align-items-center p-3">
+                  <img src="img/icons/new-gps.png" width="40px" height="40px"  />
+                  
+                  <span class="ml-3">Add IME GPS Number</span>
+                  <span class="mdi mdi-chevron-right mdi-24px ml-auto grey-text"></span>
+                </div>
+              </div>
+            </a>
+            
+            
+          </div>
+          
+          </div><!-- end row -->
+          </div><!-- end container -->
+        </main>
+        <footer class="footer fixed-bottom pb-3">
+          <div class="container">
+            <button type="button" type="submit" class="btn btn-ghost btn-lg btn-block z-depth-0 rounded-lg ">Skip This</button>
+          </div>
+        </footer>
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+        }, false);
+        });
+        }, false);
+        })();
+        </script>
+      </body>
+    </html>
