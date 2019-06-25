@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Loca</title>
+    <!-- Material Design Icons -->
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!-- Rubik Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logo-icon.png">
+  </head>
+  
+  <body class="d-flex flex-column h-100 ">
+
+    <header>  <!-- Fixed navbar -->
+    
+      <nav class="navbar navbar-expand-md loca-navbar navbar-dark fixed-top white z-depth-1">
+        <div class="container d-flex align-items-center">
+          
+          <a class="button-icon left-button" href="#">
+            <span class="mdi mdi-arrow-left mdi-24px"></span>
+          </a>
+          <h5 class="mr-auto ml-4 medium mb-0">Vanessa Ryan</h5>
+          <button class="btn-text blue-text" href="#">
+           Save
+          </button>
+          
+        </div>
+      </nav>
+    </header>
+
+    <main role="main" id="main" class="">
+
+
+      <div class="container">
+
+        <div class="row ">
+          <div class="col-12 pt-3">
+              <div class="photo-profile-large d-block border rounded-circle bg-cover mt-5 mx-auto z-depth-1" style="background-image: url(img/photo-profile/face1.png);">
+              </div>
+              <form class="mt-5">
+                <div class="form-group">
+                  <label for="username" class="loca-label">Name</label>
+                  <input type="text" class="form-control" id="username" placeholder="Yourname" >            
+                </div>
+              </form>
+          </div>     
+
+        </div>
+
+        <div class="row loca-divider mt-3">
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+
+             <ul class="list-group list-group-flush loca-list-setting mt-3">
+
+                <li class="list-group-item px-0 d-flex">
+                      
+                    <span class=" mr-auto">Block this profile</span> 
+                    
+
+              
+                  <div class="custom-control custom-switch ml-auto">
+                    <input type="checkbox" class="custom-control-input" id="customSwitches">
+                    <label class="custom-control-label" for="customSwitches"></label>
+                  </div>   
+
+                </li>
+
+                <li class="list-group-item pl-0">
+                  <a href="#" data-toggle="modal" data-target="#modal-remove-account">           
+                    <span class=" mr-auto red-text">Remove this account</span> 
+                  </a>                         
+                </li>
+
+             
+                 
+              </ul>
+
+          </div>
+        </div> 
+
+      </div><!-- end container main -->           
+    </main>
+
+    <footer class="footer fixed-bottom pb-3">
+      <div class="container">
+            
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-remove-account" tabindex="-1" role="dialog" aria-labelledby="modal-remove-account"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title medium" id="exampleModalLabel">Remove Account</h5>
+      
+          </div>
+          <div class="modal-body">
+            <p class="text-grey1">you sure to remove this member ?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-text positive mr-3" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn-text">Remove</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+      
+      </body>
+    </html>
