@@ -56,6 +56,13 @@ select:-webkit-autofill:focus {
 	font-weight: 500;
 }
 
+.btn-white{
+	background-color: #fff!important;
+	color: #333!important;
+		text-transform: capitalize;
+	font-weight: 500;
+}
+
 .btn-ghost{
 	background-color: transparent!important;
 	color:#2862FE;
