@@ -16,7 +16,6 @@
     <link href="css/responsive.css" rel="stylesheet">
     <!-- Rubik Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css">
     <link rel="icon" type="image/png" sizes="16x16" href="img/logo-icon.png">
   </head>
   
@@ -42,56 +41,18 @@
     <!-- Begin page content -->
     <main role="main" id="home">
       <div id="map" style="background: url(img/map.png)100%; background-size: cover; position: fixed; z-index: 0" ></div><!-- style for sample only -->
-      <div class="container fixed-bottom">
-        <div class="row">
-          <div class="col-12 loca-select-location-wrapper z-depth-3">
-            <h5 class="mb-0"><b>Select your location</b></h5>
-            <div class="loca-select-location-detail">
-               <ul class="list-group loca-list-place ">
-                  <li class="list-group-item d-flex align-items-center px-0 mb-3 border-0">
-                    <a href="place-setup.html">
-                      <i class="mdi mdi-map-marker mdi-24px red-text pl-0"></i>
-                      <span class="medium small">BCA ATM Centre</span>
-                      <span class="text-grey1 small">Jl. Gatot Subroto Kav.38, South Jakarta ...</span>
-                    </a>
-                  </li>
-          
-                </ul>
-                
-            </div>
-
-            <form>
-              <div class="form-group mb-4">
-              <label for="simnumber" class="loca-label active">Place Name</label>
-              <input type="text" class="form-control" id="yourname" placeholder=" ">
-              <div class="invalid-feedback">
-                Required
-              </div>
-            </div>
-              
-            </form>
-
-            <div class="range-slider-location mt-2 mb-3">
-
-              <span id="ex6CurrentSliderValLabel" class="small d-block mb-2"><b>Radius <span id="ex6SliderVal" class="">10</span> m</b></span>
-                          
-
-              <input class="w-100" id="ex6" type="text" data-slider-min="10" data-slider-max="250" data-slider-step="1" data-slider-value="10"/>
-            </div>
-
-            <div class="button-submit-wrapper">
-                 <a href="my-place.html" class="btn btn-primary  btn-block z-depth-0 rounded-lg ">Save Location</a>
-            </div>
-          </div>
-        </div>
-      </div>
       
 
 
       </main>
 
 
-   
+        <footer class="footer fixed-bottom pb-3">
+          <div class="container ">
+              <a href="place-setup.html" class="btn btn-primary  btn-block z-depth-0 rounded-lg ">Continue</a>
+          </div>
+        </footer>
+
 
 
 
@@ -105,16 +66,15 @@
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <!-- MDB core JavaScript -->
         <script type="text/javascript" src="js/mdb.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.min.js"></script>
-
         <script>
- 
+       
+          $(document).ready(function() {
 
-        // Without JQuery
-        var slider = new Slider("#ex6");
-        slider.on("slide", function(sliderValue) {
-          document.getElementById("ex6SliderVal").textContent = sliderValue;
-        });
+            if(window.location.href.indexOf('#modal-new-location') != -1) {
+              $('#modal-new-location').modal('show');
+            }
+
+          });
         </script>
       </body>
     </html>        
