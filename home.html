@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -16,109 +17,123 @@
     <link href="css/responsive.css" rel="stylesheet">
     <!-- Rubik Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap" rel="stylesheet">
-  </head>
-  
-  <body class="d-flex flex-column h-100 grey lighten-2">
-    <header>  <!-- Fixed navbar -->
-    
-    <nav class="navbar navbar-expand-md loca-navbar navbar-dark fixed-top z-depth-0">
-      <div class="container">
-       
-     
-        <a class="btn-sm white btn-float has-notif text-dark z-depth-1 ml-auto" href="notification.html"><span class="mdi mdi-bell mdi-24px"></span></a>
-      </div>
-    </nav>
-    
-    </header>  <!-- End Fixed navbar -->
+</head>
+
+<body class="d-flex flex-column h-100 grey lighten-2">
+    <header>
+        <!-- Fixed navbar -->
+
+        <nav class="navbar navbar-expand-md loca-navbar navbar-dark fixed-top z-depth-0">
+            <div class="container">
+
+                <div class="dropdown loca-dropdown"><!-- add dropdown mmy group -->
+                    <button class="btn btn-dropdown dropdown-toggle  z-depth-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    All Member 
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here another or something</a>
+                    </div>
+                </div><!-- end of dropdown my group  -->
+
+                <a class="btn-sm white btn-float has-notif text-dark z-depth-1 ml-auto" href="notification.html"><span class="mdi mdi-bell mdi-24px"></span></a>
+            </div>
+        </nav>
+
+    </header>
+    <!-- End Fixed navbar -->
     <!-- Begin page content -->
     <main role="main" id="home">
-      <div id="map" style="background: url(img/map.png)100%; background-size: cover; position: fixed; z-index: 0" ></div><!-- style for sample only -->
-      
-      <a href="member-detail.html">
-        <div class="loca-marker" style="margin-top:250px;margin-left: 100px;"><!-- style for sample only -->
-          <div class="photo-profile-marker d-block mx-auto border rounded-circle bg-cover" style="background-image: url(img/photo-profile/face1.png);">
-          </div>
-        </div>
-      </a>
+        <div id="map" style="background: url(img/map.png)100%; background-size: cover; position: fixed; z-index: 0"></div>
+        <!-- style for sample only -->
 
-      <div class="loca-marker" style="margin-top:20px;margin-left: 50%;"><!-- style for sample only -->
-        <div class="photo-profile-marker d-block mx-auto border rounded-circle bg-cover " style="background-image: url(img/photo-profile/face2.png);">
-        </div>
-      </div>
-
-      </main>
-
-
-        <footer class="footer fixed-bottom">
-          <div class="container p-0">
-             <nav class="navbar navbar-expand-md loca-bottom-navbar navbar-dark p-0 transparent z-depth-0">
-                <div class="container">
-                  <ul class="nav w-100 ">
-                    <li class="nav-item white z-depth-1">
-                      <a class="nav-link" href="home.html"><span class="mdi mdi-home mdi-24px"></span></a>
-                    </li>
-                    <li class="nav-item top-shadow white z-depth-1" style="border-radius: 0 8px 0 0">
-                       <a class="nav-link" href="my-member.html"><span class="mdi mdi-account-group mdi-24px"></span></a>
-                    </li>
-                    <li class="nav-item button-main-center ">
-                   
-                      <a href="new-member.html" class="btn" onClick="window.open(login.html);">
-                        <span class="mdi mdi-plus mdi-36px text-white"></span>
-                      </a>
-                    </li>
-                    <li class="nav-item white  z-depth-1"  style="border-radius: 8px 0 0 0">
-                        <a class="nav-link" href="my-place.html"><span class="mdi mdi-map-marker-radius mdi-24px"></span></a>
-                    </li>
-                    <li class="nav-item top-shadow white  z-depth-1">
-                      <a class="nav-link" href="setting.html"><span class="mdi mdi-settings mdi-24px"></span></a>
-                    </li>
-                  </ul>
+        <a href="member-detail.html">
+            <div class="loca-marker" style="margin-top:250px;margin-left: 100px;">
+                <!-- style for sample only -->
+                <div class="photo-profile-marker d-block mx-auto border rounded-circle bg-cover" style="background-image: url(img/photo-profile/face1.png);">
                 </div>
-              </nav>
-          </div>
-        </footer>
+            </div>
+        </a>
+
+        <div class="loca-marker" style="margin-top:20px;margin-left: 50%;">
+            <!-- style for sample only -->
+            <div class="photo-profile-marker d-block mx-auto border rounded-circle bg-cover " style="background-image: url(img/photo-profile/face2.png);">
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="footer fixed-bottom">
+        <div class="container p-0">
+            <nav class="navbar navbar-expand-md loca-bottom-navbar navbar-dark p-0 transparent z-depth-0">
+                <div class="container">
+                    <ul class="nav w-100 ">
+                        <li class="nav-item white z-depth-1">
+                            <a class="nav-link" href="home.html"><span class="mdi mdi-home mdi-24px"></span></a>
+                        </li>
+                        <li class="nav-item top-shadow white z-depth-1" style="border-radius: 0 8px 0 0">
+                            <a class="nav-link" href="my-member.html"><span class="mdi mdi-account-group mdi-24px"></span></a>
+                        </li>
+                        <li class="nav-item button-main-center ">
+
+                            <a href="new-member.html" class="btn" onClick="window.open(login.html);">
+                                <span class="mdi mdi-plus mdi-36px text-white"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item white  z-depth-1" style="border-radius: 8px 0 0 0">
+                            <a class="nav-link" href="my-place.html"><span class="mdi mdi-map-marker-radius mdi-24px"></span></a>
+                        </li>
+                        <li class="nav-item top-shadow white  z-depth-1">
+                            <a class="nav-link" href="setting.html"><span class="mdi mdi-settings mdi-24px"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
 
 
 
     <!-- Modal -->
-    <div class="modal fade" id="modal-new-location" tabindex="-1" role="dialog" aria-labelledby="modal-new-location"
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-        <div class="modal-content loca-bg-blue">
-    
-          <div class="modal-body text-center px-5">
-            <img src="img/undraw3.png" width="250px" class="mt-4">
-              <h4 class="modal-title text-white medium my-3" id="exampleModalLabel">Add your place</h4>
-      
-            <p class="text-white">Make it easy to see everybody by adding place like home, work, school, and others</p>
-          </div>
-          <div class="modal-footer">
-            <a class="btn z-depth-0 btn-white btn-block  mx-3 mb-3">Lets Go!</a>
-         
-          </div>
+    <div class="modal fade" id="modal-new-location" tabindex="-1" role="dialog" aria-labelledby="modal-new-location" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content loca-bg-blue">
+
+                <div class="modal-body text-center px-5">
+                    <img src="img/undraw3.png" width="250px" class="mt-4">
+                    <h4 class="modal-title text-white medium my-3" id="exampleModalLabel">Add your place</h4>
+
+                    <p class="text-white">Make it easy to see everybody by adding place like home, work, school, and others</p>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn z-depth-0 btn-white btn-block  mx-3 mb-3">Lets Go!</a>
+
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
 
-        <!-- SCRIPTS -->
-        <!-- JQuery -->
-        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-        <!-- Bootstrap tooltips -->
-        <script type="text/javascript" src="js/popper.min.js"></script>
-        <!-- Bootstrap core JavaScript -->
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <!-- MDB core JavaScript -->
-        <script type="text/javascript" src="js/mdb.min.js"></script>
-        <script>
-       
-          $(document).ready(function() {
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script>
+        $(document).ready(function() {
 
-            if(window.location.href.indexOf('#modal-new-location') != -1) {
-              $('#modal-new-location').modal('show');
+            if (window.location.href.indexOf('#modal-new-location') != -1) {
+                $('#modal-new-location').modal('show');
             }
 
-          });
-        </script>
-      </body>
-    </html>        
+        });
+    </script>
+</body>
+
+</html>
