@@ -490,8 +490,36 @@ li.list-group-item a.nav-item {
 
 /* ----------================== PHASE II ==================---------- */
 
+.add-new-member-warper .card .card-body{
+    padding: 0.75rem!important;
+   
+    
+
+}
 
 
+.add-new-member-warper .card{
+    margin-bottom: 0.5rem!important;
+}
+
+.list-group-photo-profile {
+    width: 80px;
+    height: 60px;
+   
+}
+
+
+.list-group-profile-member{
+    width: calc(100% - 30px);
+    padding-left: 8px;
+    padding-top: 4px;
+   
+}
+
+.list-group-add-icon{
+    width: 30px;
+    height: 30px;
+}
 
 /* ============================ Add dropdown ========================= */
 
@@ -570,4 +598,7 @@ li.list-group-item a.nav-item {
 
 
 /* ============================ end dropdown ========================= */
+
+
+
 
